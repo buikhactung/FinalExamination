@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // let a2 = [2,4,0,5,1];
+    // let a3 = [-8,-6,-2,-6,-1,-1,-4];
+    function findMaxScore() {
+        let arrA = [10, 5, 2, 8, -1, 6, 8];
+        max = arrA[0];
+        for (let j = 0; j < arrA.length - 1; j++) {
+            if (arrA[j] > max) {
+                max = arrA[j];
+            }
+        }
+        document.write("giá trị lớn nhất là: " + max);
+    }
+
+    findMaxScore();
+</script>
+</body>
+</html>

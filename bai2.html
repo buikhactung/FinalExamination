@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray() {
+        let arrA = [12, 6, 3, 7,3, 21, 5, 7];
+        let n = parseInt(prompt("Nhập số cần xóa"));
+        for (let i = 0; i < arrA.length; i++) {
+            if (n === arrA[i]) {
+                arrA.splice(i, 1);
+            }
+        }
+        document.write(arrA);
+    }
+
+    tryRemoveFromArray()
+</script>
+</body>
+</html>
